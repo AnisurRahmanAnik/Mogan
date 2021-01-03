@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+/*========================================
+BASIC CSS
+=========================================*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a,a:hover{
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+body{
+	background: #282828;
+	font-family: 'Open Sans', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+section{
+	padding: 60px 0;
+}
+.sticky{
+	background: #ffffff;
+}
+/*========================================
+HEADER CSS
+=========================================*/
+.header{
+	background: url(../img/mogan1.png),linear-gradient(to right, #08080c,#000);
+	background-position: center center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	height: 670px;
+	position: relative;
+}
+.nav-link{
+	color: #fff;
+	margin-right: 20px;
+	padding: 10px 12px;
+	transition: all linear .4s;
+	transform: scale(1);
+}
+.nav-link:hover{
+	background: #d6c6b2;
+	color: #000;
+	transform: scale(1.2);
+}
+.contact{
+	margin-right: 0;
+}
+.text-white{
+	color: #fff;
+}
+.navbar-brand{
+	width: 178px;
+	height: 77px;
+}
+.right{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	color: #fff;
+	text-align: right;
+
+
+}
+.right p{
+	font-size: 20px;
+}
+.right h1{
+	font-size: 85px;
+}
+
+.right .btn-outline-warning{
+	padding: 13px 20px;
+	margin-top: 30px;
+}
+.right .btn-warning{
+	padding: 13px 40px;
+	margin-top: 30px;
+}
+/* nav.navbar.navbar-expand-lg.pt-3 {
+  
+} */
+.sticky{
+	background: #fff;
+	z-index: 1;
+	position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.sticky .nav-link{
+	color: #000;
+}
+/*========================================
+ABOUT CSS
+=========================================*/
+.about{
+	padding: 100px 0;
+}
+.about h4{
+	color: #d6c6b2;
+	font-size: 32px;
+	margin-bottom: 55px;
+}
+.about p{
+	color: #fff;
+	margin-bottom: 35px;
+}
+.about h5{
+	color: #d6c6b2;
+	font-size: 23px;
+	margin-bottom: 25px;
+}
+.about i{
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	line-height: 2.5;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 17px;
+	transition: .3s;
+}
+.about i:hover{
+	background: #d6c6b2;
+	border: #d6c6b2;
+	color: #282828;
+}
+/*========================================
+SERVICE CSS
+=========================================*/
+
+
+.service h5{
+	color: white;
+}
+.services .background{
+	background: url(../img/service.jpg);
+	background-size: cover;
+	padding: 60px;
+	color: #fff;
+}
+ h2{
+	color: #d6c6b2;
+	font-size: 32px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 60px;
+}
+.services h5{
+	margin: 25px 0;
+	font-size: 20px;
+}
+.services p{
+	color: #cccccc;
+	font-size: 14px;
+}
+.services img{
+	transition: all linear .4s;
+}
+.services img:hover{
+	transform: scale(1.15);
+}
+/*========================================
+PORTFOLIO CSS
+=========================================*/
+.portflio{
+	padding: 60px 0;
+}
+.portfolio .col-md-2.text-white{
+	width: 200px;
+}
+.portfolio h4{
+	width: 200px;
+	font-size: 35px;
+	color: #d6c6b2;
+	margin-bottom: 60px;
+
+}
+.portfolio  .yo{
+	color: #d6c6b2;
+}
+.portfolio dl dt{
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.portfolio dl{
+	width: 200px;
+}
+
+.image{
+	position: relative;
+
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 0%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(220, 198, 169, 0.88);
+	text-align: center;
+	opacity:0;
+	transition: all linear .5s;
+}
+.align i{
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	background: #444444;
+	line-height: 2.5;
+	border-radius: 50%;
+	display: inline-block;
+	color: #fff;
+	margin-top: 30px;
+}
+.align h5{
+	margin-top: 60px;
+}
+.image:hover .overlay{
+	opacity: 1;
+	width: 100%;
+}
+.buton{
+	display: flex;
+	justify-content: center;
+}
+.portfolio a{
+	display: inline-block;
+	background: #d6c6b2;
+	padding: 15px 20px;
+	margin-top: 60px;
+	color: #000;
+	text-align: center;
+	transition: .4s;
+
+}
+.portfolio a:hover{
+	color: #d6c6b2;
+	background: #282828;
+	border: 1px solid #d6c6b2;
+
+}
+/*========================================
+PORTFOLIO CSS
+=========================================*/
+.testimonial{
+	background: url(../img/team.jpg);
+	background-size: cover;
+}
+.testimonial i{
+	margin-bottom: 20px;
+
+}
+.testimonial p{
+	margin: 5px 0;
+}
+/*========================================
+PRICING CSS
+=========================================*/
+.single-price{
+	background: #333;
+	text-align: center;
+	margin: 10px 0;
+}
+.single-price .price-head{
+	padding: 20px;
+	background: #d6c6b2;
+	font-size: 20px;
+}
+.single-price img{
+	margin: 20px auto 15px;
+}
+.single-price .h1{
+	font-size: 60px;
+	
+}
+.single-price .h1 span{
+	font-size: 24px;
+}
+.single-price .h1::after{
+	width: 230px;
+	content: "";
+	display: block;
+	background-color: #444240;
+	height: 2px;
+	margin: 25px auto;
+}
+.single-price li{
+	margin-bottom: 25px;
+}
+.single-price a{
+	padding: 15px 20px;
+	border: 1px solid #fff;
+	display: inline-block;
+	color: #fff;
+	margin-bottom: 20px;
+	transition: .4s;
+}
+.single-price a:hover{
+	background: #d6c6b2;
+	color: #000;
+}
+ .premium{
+	background: #d3c2ae;
+	color: #000;
+}
+/* .premium .price-head{
+
+} */
+.premium a{
+	color: #000;
+	border:1px solid #999;
+}
+/*========================================
+BLOG CSS
+=========================================*/
+.blog{
+	background: #333333;
+	color: #cccccc;
+}
+.blog h4{
+	color: #d6c6b2;
+	margin: 20px 0;
+	font-size: 20px;
+}
+.blog span, .blog i{
+	color: #cccccc;
+}
+.blog p{
+	color: #cccccc;
+	margin-bottom: 10px;
+}
+.blog .color{
+	background: #282828;
+	padding: 25px;
+	padding-bottom: 10px;
+}
+.blog a{
+	color: #d6c6b2;
+	font-size: 18px;
+}
+.blog h5{
+	color: #d6c6b2;
+	font-size: 18px;
+	float: right;
+}
+.blog .image img{
+	height: 310px;
+}
+.blog .yellow{
+	background: #d6c6b2;
+	padding: 20px;
+	
+}
+.blog .yellow h4{
+	color: #000;
+	text-align: center;
+}
+.blog .yellow span{
+	color: #666666;
+}
+.blog .yellow i{
+	color: #666666;
+}
+.blog .yellow p{
+	color: #666666;
+}
+.blog .yellow a{
+	color: #000;
+}
+.blog .yellow h5{
+	color: #666666;
+}
+.blog .yellow .icons{
+	float: right;
+}
+.blog .btn{
+	margin-top: 50px;
+	text-align: center;
+	display: inline-block;
+	color: #000;
+	background: #d6c6b2;
+	padding: 14px 20px;
+	transition: .3s;
+}
+/* .blog .image{
+	
+} */
+.blog .image .overlay{
+	background: rgba(152, 141, 129, 0.85);
+	transform: scale(.1);
+	transition: all linear .6s;
+}
+.blog .image:hover .overlay{
+	transform: scale(1);
+}
+.blog a:hover{
+	color: #d6c6b2;
+	background: #282828;
+	border: 1px solid #d6c6b2;
+
+}
+/*========================================
+CONTACT CSS
+=========================================*/
+.address{
+	color: #cccccc;
+}
+.address p{
+	font-size: 18px;
+	margin-bottom: 18px;
+	margin-left: 10px;
+}
+ h4{
+	margin-bottom: 25px;
+	color: #fff;
+	font-size: 22px;
+}
+.h4{
+	margin-top: 32px;
+	margin-bottom: 25px;
+}
+.contact a i{
+	font-size: 20px;
+	color: #fff;
+	transition: .4s;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 2.5;
+	border-radius: 50%;
+}
+.contact a i:hover{
+	background: #d6c6b2;
+	
+}
+.contact .contact-form{
+	background: #333333;
+	padding: 25px;
+}
+.contact .contact-form textarea,input{
+	width: 100%;
+	background: transparent;
+	border: 1px solid #666666;
+	padding: 10px 10px;
+	color: #666;
+}
+.contact .contact-form input{
+	height: 30px;
+}
+.contact .contact-form textarea{
+	height: 150px;
+	margin-top: 10px;
+}
+.contact .contact-form textarea:focus,input:focus{
+	border: 1px solid #d6c6b2;
+	outline: 0;
+}
+/*=============FOOTER CSS============*/
+footer{
+	background: #333333;
+	padding: 20px;
+}
+footer p{
+	color: #ccc;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
